@@ -1,11 +1,10 @@
--- Create customers table
 CREATE TABLE customers (
     customer_id SERIAL PRIMARY KEY,
     name VARCHAR(100),
     city VARCHAR(50)
 );
 
--- Create products table
+
 CREATE TABLE products (
     product_id SERIAL PRIMARY KEY,
     product_name VARCHAR(100),
@@ -13,7 +12,7 @@ CREATE TABLE products (
     price INT
 );
 
--- Create orders table
+
 CREATE TABLE orders (
     order_id SERIAL PRIMARY KEY,
     customer_id INT REFERENCES customers(customer_id),
@@ -22,14 +21,14 @@ CREATE TABLE orders (
     quantity INT
 );
 
--- Insert sample data into customers
+
 INSERT INTO customers (name, city) VALUES
 ('Raj Sharma', 'Mumbai'),
 ('Anjali Mehta', 'Delhi'),
 ('Vikram Patel', 'Ahmedabad'),
 ('Sneha Reddy', 'Hyderabad');
 
--- Insert sample data into products
+
 INSERT INTO products (product_name, category, price) VALUES
 ('T-Shirt', 'Clothing', 500),
 ('Headphones', 'Electronics', 1500),
@@ -37,7 +36,7 @@ INSERT INTO products (product_name, category, price) VALUES
 ('Notebook', 'Stationery', 100),
 ('Water Bottle', 'Accessories', 300);
 
--- Insert sample data into orders
+
 INSERT INTO orders (customer_id, product_id, order_date, quantity) VALUES
 (1, 1, '2024-01-10', 2),
 (1, 2, '2024-01-15', 1),
