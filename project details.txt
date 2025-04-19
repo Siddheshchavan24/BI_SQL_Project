@@ -1,0 +1,11 @@
+Sales Insights Dashboard – SQL Side
+Scenario:
+You work as a BI Intern at a retail company. Your manager has given you a PostgreSQL database with tables like customers, orders, products, and sales. You're asked to derive insights using SQL.
+
+SQL Tasks You’ll Do:
+Total sales by city
+Top 3 products by revenue
+Monthly revenue trends
+Customer who placed the highest order
+Most selling product category
+Use of JOINS, GROUP BY, WINDOW FUNCTIONS, SUBQUERIES
